@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>
+  Unicode Tool vous permet d'avoir toutes les informations que vous souhaitez sur n'importe quel caractère unicode de votre choix.
+</p>
+<p>
+  Commencer à rechercher quelque chose ou cliquez sur un des liens d'exemple ci-dessous !
+</p>
+
+<form method="GET" action="/search" class="searchbar">
+  <label for="research"></label>
+  <input type="text" id="research" name="research" placeholder="{{random}}">
+</form>
+
+<ul>
+  <li>
+    <a href="/unicode/97">La lettre "a"</a>
+  </li>
+  <li>
+    <a href="/unicode/10003">Le caractère checkmark</a>
+  </li>
+  <li>
+    <a href="/unicode/128293">Le feu</a>
+  </li>
+</ul>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="GET" class="searchbar">
+  <label for="research">Rechercher : </label>
+  <input type="text" id="research" name="research" placeholder="{{random}}">
+</form>
+
+
+{% if results %}
+
+  <ul>
+    {% for result in results %}
+
+    <li>
+      <a href="/unicode/{{result.code}}">
+        {{result.display}}, {{result.name}}
+      </a>
+    </li>
+
+    {% endfor %}
+  </ul>
+
+{% else %}
+
+<h2>Exemples de recherches :</h2>
+
+<ul>
+  <li>
+    &hearts;
+  </li>
+  <li>
+    10003
+  </li>
+  <li>
+    U+132b7
+  </li>
+</ul>
+
+{% endif %}
+
+{% endblock %}

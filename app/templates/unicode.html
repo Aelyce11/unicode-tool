@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>"{{char.display}}", {{char.name}}</h1>
+
+<ul>
+  <li>
+    Codepoint : "{{char.codepoint}}"
+  </li>
+  <li>
+    Décimale : "{{char.decimal}}"
+  </li>
+  <li>
+    Catégorie : "{{char.category}}"
+  </li>
+</ul>
+
+<footer>
+  {% if char.decimal != 1 %}
+    <a href="{{char.decimal-1}}">&lt; Caractère précédent</a>
+  {% endif %}
+  {% if char.decimal != 230000 %}
+    <a href="{{char.decimal+1}}">Caractère suivant &gt;</a>
+  {% endif %}
+</footer>
+
+{% endblock %}
