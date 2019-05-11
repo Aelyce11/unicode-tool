@@ -6,7 +6,7 @@
   color: white;
   text-decoration: none;
   list-style: none;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 body {
@@ -19,7 +19,6 @@ body {
 a {
   text-decoration: underline;
 }
-
 a:hover {
   color: #e99090;
 }
@@ -31,7 +30,6 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
 nav a {
   margin-left: 1.5em;
 }
@@ -39,12 +37,12 @@ nav a {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  padding: 1.5em;
+  padding: 150px 1.5em;
   box-sizing: border-box;
   min-height: 90vh;
 }
-
 main footer {
   display: flex;
   justify-content: space-between;
@@ -61,18 +59,17 @@ p {
   width: 50%;
   margin: 3em 0px;
 }
-
 .searchbar input {
   border: 1px solid white;
   padding: 0.5em 1em;
   width: 80%;
   font-size: 1.5em;
 }
-
 .searchbar input::placeholder {
   color: #ffffff80;
 }
-
 .searchbar input:focus {
   border-color: #e99090;
 }
+
+/*# sourceMappingURL=style.css.map */

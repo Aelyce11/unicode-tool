@@ -38,8 +38,9 @@ nav {
 main {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  padding: 1.5em;
+  padding: 150px 1.5em;
   box-sizing: border-box;
   min-height: 90vh;
 
